@@ -4,168 +4,167 @@
 
 
 # ----------CLASSROOMS----------
-:Room_A a :Classroom ;
+:room_a a :Classroom ;
     rdfs:label "Room A" ;
     :capacity 30 .
 
-:Room_B a :Classroom ;
+:boom_b a :Classroom ;
     rdfs:label "Room B" ;
     :capacity 50 .
 
-:Room_C a :Classroom ;
+:room_c a :Classroom ;
     rdfs:label "Room C" ;
     :capacity 20 .
 
-:Room_D a :Classroom ;
+:room_d a :Classroom ;
     rdfs:label "Room D" ;
     :capacity 40 .
     
-:Room_E a :Classroom ;
+:room_e a :Classroom ;
     rdfs:label "Room E" ;
     :capacity 80 .
 
 # ----------TIME SLOTS----------
 # MONDAY
-:TS_Mon_08_10 a :Timeslot ;
+:ts_mon_08_10 a :Timeslot ;
     rdfs:label "Monday 08-10" ;
     :dayOfWeek "Monday" ;
     :startTime "08:00:00"^^xsd:time ;
     :endTime   "10:00:00"^^xsd:time .
 
-:TS_Mon_10_12 a :Timeslot ;
+:ts_mon_10_12 a :Timeslot ;
     rdfs:label "Monday 10-12" ;
     :dayOfWeek "Monday" ;
     :startTime "10:00:00"^^xsd:time ;
     :endTime   "12:00:00"^^xsd:time .
 
-:TS_Mon_13_15 a :Timeslot ;
+:ts_mon_13_15 a :Timeslot ;
     rdfs:label "Monday 13-15" ;
     :dayOfWeek "Monday" ;
     :startTime "13:00:00"^^xsd:time ;
     :endTime   "15:00:00"^^xsd:time .
 
-:TS_Mon_15_17 a :Timeslot ;
+:ts_mon_15_17 a :Timeslot ;
     rdfs:label "Monday 15-17" ;
     :dayOfWeek "Monday" ;
     :startTime "15:00:00"^^xsd:time ;
     :endTime   "17:00:00"^^xsd:time .
 
 # TUESDAY
-:TS_Tue_08_10 a :Timeslot ;
+:ts_tue_08_10 a :Timeslot ;
     rdfs:label "Tuesday 08-10" ;
     :dayOfWeek "Tuesday" ;
     :startTime "08:00:00"^^xsd:time ;
     :endTime   "10:00:00"^^xsd:time .
 
-:TS_Tue_10_12 a :Timeslot ;
+:ts_tue_10_12 a :Timeslot ;
     rdfs:label "Tuesday 10-12" ;
     :dayOfWeek "Tuesday" ;
     :startTime "10:00:00"^^xsd:time ;
     :endTime   "12:00:00"^^xsd:time .
 
-:TS_Tue_13_15 a :Timeslot ;
+:ts_tue_13_15 a :Timeslot ;
     rdfs:label "Tuesday 13-15" ;
     :dayOfWeek "Tuesday" ;
     :startTime "13:00:00"^^xsd:time ;
     :endTime   "15:00:00"^^xsd:time .
 
-:TS_Tue_15_17 a :Timeslot ;
+:ts_tue_15_17 a :Timeslot ;
     rdfs:label "Tuesday 15-17" ;
     :dayOfWeek "Tuesday" ;
     :startTime "15:00:00"^^xsd:time ;
     :endTime   "17:00:00"^^xsd:time .
 
 # WEDNESDAY
-:TS_Wed_08_10 a :Timeslot ;
+:ts_wed_08_10 a :Timeslot ;
     rdfs:label "Wednesday 08-10" ;
     :dayOfWeek "Wednesday" ;
     :startTime "08:00:00"^^xsd:time ;
     :endTime   "10:00:00"^^xsd:time .
 
-:TS_Wed_10_12 a :Timeslot ;
+:ts_wed_10_12 a :Timeslot ;
     rdfs:label "Wednesday 10-12" ;
     :dayOfWeek "Wednesday" ;
     :startTime "10:00:00"^^xsd:time ;
     :endTime   "12:00:00"^^xsd:time .
 
-:TS_Wed_13_15 a :Timeslot ;
+:ts_wed_13_15 a :Timeslot ;
     rdfs:label "Wednesday 13-15" ;
     :dayOfWeek "Wednesday" ;
     :startTime "13:00:00"^^xsd:time ;
     :endTime   "15:00:00"^^xsd:time .
 
-:TS_Wed_15_17 a :Timeslot ;
+:ts_wed_15_17 a :Timeslot ;
     rdfs:label "Wednesday 15-17" ;
     :dayOfWeek "Wednesday" ;
     :startTime "15:00:00"^^xsd:time ;
     :endTime   "17:00:00"^^xsd:time .
 
 # THURSDAY
-:TS_Thu_08_10 a :Timeslot ;
+:ts_thu_08_10 a :Timeslot ;
     rdfs:label "Thursday 08-10" ;
     :dayOfWeek "Thursday" ;
     :startTime "08:00:00"^^xsd:time ;
     :endTime   "10:00:00"^^xsd:time .
 
-:TS_Thu_10_12 a :Timeslot ;
+:ts_thu_10_12 a :Timeslot ;
     rdfs:label "Thursday 10-12" ;
     :dayOfWeek "Thursday" ;
     :startTime "10:00:00"^^xsd:time ;
     :endTime   "12:00:00"^^xsd:time .
 
-:TS_Thu_13_15 a :Timeslot ;
+:ts_thu_13_15 a :Timeslot ;
     rdfs:label "Thursday 13-15" ;
     :dayOfWeek "Thursday" ;
     :startTime "13:00:00"^^xsd:time ;
     :endTime   "15:00:00"^^xsd:time .
 
-:TS_Thu_15_17 a :Timeslot ;
+:ts_thu_15_17 a :Timeslot ;
     rdfs:label "Thursday 15-17" ;
     :dayOfWeek "Thursday" ;
     :startTime "15:00:00"^^xsd:time ;
     :endTime   "17:00:00"^^xsd:time .
 
 # FRIDAY
-:TS_Fri_08_10 a :Timeslot ;
+:ts_fri_08_10 a :Timeslot ;
     rdfs:label "Friday 08-10" ;
     :dayOfWeek "Friday" ;
     :startTime "08:00:00"^^xsd:time ;
     :endTime   "10:00:00"^^xsd:time .
 
-:TS_Fri_10_12 a :Timeslot ;
+:ts_fri_10_12 a :Timeslot ;
     rdfs:label "Friday 10-12" ;
     :dayOfWeek "Friday" ;
     :startTime "10:00:00"^^xsd:time ;
     :endTime   "12:00:00"^^xsd:time .
 
-:TS_Fri_13_15 a :Timeslot ;
+:ts_fri_13_15 a :Timeslot ;
     rdfs:label "Friday 13-15" ;
     :dayOfWeek "Friday" ;
     :startTime "13:00:00"^^xsd:time ;
     :endTime   "15:00:00"^^xsd:time .
 
-:TS_Fri_15_17 a :Timeslot ;
+:ts_fri_15_17 a :Timeslot ;
     rdfs:label "Friday 15-17" ;
     :dayOfWeek "Friday" ;
     :startTime "15:00:00"^^xsd:time ;
     :endTime   "17:00:00"^^xsd:time .
 
 # ----------CLASSES----------
-:Class_1 a :CourseInstance ;
+:class_1 a :CourseInstance ;
     rdfs:label "Class 1" .
 
-:Class_2 a :CourseInstance ;
+:class_2 a :CourseInstance ;
     rdfs:label "Class 2" .
 
-:Class_3 a :CourseInstance ;
+:class_3 a :CourseInstance ;
     rdfs:label "Class 3" .
 
-:Class_4 a :CourseInstance ;
+:class_4 a :CourseInstance ;
     rdfs:label "Class 4" .
 
-:Class_5 a :CourseInstance ;
+:class_5 a :CourseInstance ;
     rdfs:label "Class 5" .
 
-:Class_6 a :CourseInstance ;
+:class_6 a :CourseInstance ;
     rdfs:label "Class 6" .
-    
