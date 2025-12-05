@@ -152,3 +152,12 @@
 
 :Class_3 a :ClassSession ;
     rdfs:label "Class 3" .
+
+:Class_4 a :ClassSession ;
+    rdfs:label "Class 4" .
+
+:Class_5 a :ClassSession ;
+    rdfs:label "Class 5" ;.
+
+:Class_6 a :ClassSession ;
+    rdfs:label "Class 6" .
