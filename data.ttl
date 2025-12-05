@@ -1,6 +1,6 @@
-@prefix :    <http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix :       <http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 # ----------CLASSROOMS----------
