@@ -5,19 +5,24 @@
 
 # ----------CLASSROOMS----------
 :Room_A a :Classroom ;
-    rdfs:label "Room A" .
+    rdfs:label "Room A" ;
+    :capacity 30 .
 
 :Room_B a :Classroom ;
-    rdfs:label "Room B" .
+    rdfs:label "Room B" ;
+    :capacity 50 .
 
 :Room_C a :Classroom ;
-    rdfs:label "Room C" .
+    rdfs:label "Room C" ;
+    :capacity 20 .
 
 :Room_D a :Classroom ;
-    rdfs:label "Room D" .
+    rdfs:label "Room D" ;
+    :capacity 40 .
     
 :Room_E a :Classroom ;
-    rdfs:label "Room E" .
+    rdfs:label "Room E" ;
+    :capacity 80 .
 
 # ----------TIME SLOTS----------
 # MONDAY
@@ -150,7 +155,7 @@
     rdfs:label "Class 1" .
 
 :Class_2 a :CourseInstance ;
-    rdfs:label "Class 2" ;.
+    rdfs:label "Class 2" .
 
 :Class_3 a :CourseInstance ;
     rdfs:label "Class 3" .
@@ -159,7 +164,8 @@
     rdfs:label "Class 4" .
 
 :Class_5 a :CourseInstance ;
-    rdfs:label "Class 5" ;.
+    rdfs:label "Class 5" .
 
 :Class_6 a :CourseInstance ;
     rdfs:label "Class 6" .
+    
