@@ -1,4 +1,9 @@
-0 { schedule(I, R, T) : room(R), timeslot(T) } 1 :- instance(I).
+Occurrences { chosen_instance(I, C) : has_course(I, C) } Occurrences :- 
+    course(C, Occurrences).
+
+1 { schedule(I, R, T) : room(R), timeslot(T) } 1 :- 
+    chosen_instance(I, _).
+
 
 conflict("Classroom_Double_Booked", R, T) :-
     schedule(I1, R, T),
@@ -30,10 +35,12 @@ scheduled_count(C, Count) :-
     Count = #count { I : schedule(I, _, _), has_course(I, C) }, 
     course(C, _).
 
-conflict("Mismatched_Occurrences", Course, Required) :-
-    course(Course, Required),
+conflict("Mismatched_Occurrences", Course, Occurrences) :-
+    course(Course, Occurrences),
     scheduled_count(Course, Count),
-    Required != Count.
+    Occurrences != Count.
+
+:~ conflict("Mismatched_Occurrences", Course, Occurrences). [100@1, Course]
 
 :~ conflict(Type, Entity, Time). [100@1, Type]
 
