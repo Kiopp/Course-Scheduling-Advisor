@@ -1,0 +1,265 @@
+@prefix :       <http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+# ----------PROGRAMS----------
+:business a :Program ;
+    rdfs:label "Business" ;
+    :hasClass :class_3,
+        :class_4 .
+
+:computer_science a :Program ;
+    rdfs:label "Computer Science" ;
+    :hasClass :class_1,
+        :class_2 .
+
+:linguistics a :Program ;
+    rdfs:label "Linguistics" ;
+    :hasClass :class_5,
+        :class_6 .
+
+# ----------COURSES----------
+:knowledge_representation_and_reasoning a :Course ;
+    rdfs:label "Knowledge Representation and Reasoning" ;
+    :isPartOfProgram :computer_science ;
+    :occurrencesPerWeek 3 .
+
+:data_structures a :Course ;
+    rdfs:label "Data Structures" ;
+    :isPartOfProgram :computer_science ;
+    :occurrencesPerWeek 4 .
+
+:single_variable_calculus a :Course ;
+    rdfs:label "Single Variable Calculus" ;
+    :isPartOfProgram :computer_science ;
+    :occurrencesPerWeek 3 .
+
+:statistics a :Course ;
+    rdfs:label "Statistics" ;
+    :isPartOfProgram :business,
+        :computer_science ;
+    :occurrencesPerWeek 2 .
+
+:international_marketing a :Course ;
+    rdfs:label "International Marketing" ;
+    :isPartOfProgram :business ;
+    :occurrencesPerWeek 2 .
+
+:microeconomic_principles a :Course ;
+    rdfs:label "Microeconomic Principles" ;
+    :isPartOfProgram :linguistics ;
+    :occurrencesPerWeek 2 .
+
+:phonetics a :Course ;
+    rdfs:label "Phonetics" ;
+    :isPartOfProgram :linguistics ;
+    :occurrencesPerWeek 2 .
+
+:semantics a :Course ;
+    rdfs:label "Semantics" ;
+    :isPartOfProgram :linguistics ;
+    :occurrencesPerWeek 2 .
+
+:languages_of_the_world a :Course ;
+    rdfs:label "Languages of the World" ;
+    :isPartOfProgram :linguistics ;
+    :occurrencesPerWeek 4 .
+
+:syntactic_theory a :Course ;
+    rdfs:label "Syntactic Theory" ;
+    :isPartOfProgram :linguistics ;
+    :occurrencesPerWeek 1 .
+
+# ----------TEACHERS----------
+:marcus_gunnarsen a :Teacher ;
+    rdfs:label "Marcus Gunnarsen" .
+
+:frans_jeppsson_wall a :Teacher ;
+    rdfs:label "Frans Jeppsson Wall" .
+
+:örs_siklósi a :Teacher ;
+    rdfs:label "Örs Siklósi" .
+
+:benjamin_tennyson a :Teacher ;
+    rdfs:label "Benjamin Tennyson" .
+
+:daniel_fenton a :Teacher ;
+    rdfs:label "Daniel Fenton" .
+
+:finn_campbell_mertens a :Teacher ;
+    rdfs:label "Finn Campbell Mertens" .
+
+:henrik_rosenkvist a :Teacher ;
+    rdfs:label "Hentrik Rosenkvist" .
+
+:joakim_nivre a :Teacher ;
+    rdfs:label "Joakim Nivre" .
+
+:viveka_adelswärd a :Teacher ;
+    rdfs:label "Viveka Adelswärd" .
+    
+# ----------CLASSROOMS----------
+:room_a a :Classroom ;
+    rdfs:label "Room A" ;
+    :capacity 30 .
+
+:boom_b a :Classroom ;
+    rdfs:label "Room B" ;
+    :capacity 50 .
+
+:room_c a :Classroom ;
+    rdfs:label "Room C" ;
+    :capacity 20 .
+
+:room_d a :Classroom ;
+    rdfs:label "Room D" ;
+    :capacity 40 .
+    
+:room_e a :Classroom ;
+    rdfs:label "Room E" ;
+    :capacity 80 .
+
+# ----------TIME SLOTS----------
+# MONDAY
+:ts_mon_08_10 a :Timeslot ;
+    rdfs:label "Monday 08-10" ;
+    :dayOfWeek "Monday" ;
+    :startTime "08:00:00"^^xsd:time ;
+    :endTime   "10:00:00"^^xsd:time .
+
+:ts_mon_10_12 a :Timeslot ;
+    rdfs:label "Monday 10-12" ;
+    :dayOfWeek "Monday" ;
+    :startTime "10:00:00"^^xsd:time ;
+    :endTime   "12:00:00"^^xsd:time .
+
+:ts_mon_13_15 a :Timeslot ;
+    rdfs:label "Monday 13-15" ;
+    :dayOfWeek "Monday" ;
+    :startTime "13:00:00"^^xsd:time ;
+    :endTime   "15:00:00"^^xsd:time .
+
+:ts_mon_15_17 a :Timeslot ;
+    rdfs:label "Monday 15-17" ;
+    :dayOfWeek "Monday" ;
+    :startTime "15:00:00"^^xsd:time ;
+    :endTime   "17:00:00"^^xsd:time .
+
+# TUESDAY
+:ts_tue_08_10 a :Timeslot ;
+    rdfs:label "Tuesday 08-10" ;
+    :dayOfWeek "Tuesday" ;
+    :startTime "08:00:00"^^xsd:time ;
+    :endTime   "10:00:00"^^xsd:time .
+
+:ts_tue_10_12 a :Timeslot ;
+    rdfs:label "Tuesday 10-12" ;
+    :dayOfWeek "Tuesday" ;
+    :startTime "10:00:00"^^xsd:time ;
+    :endTime   "12:00:00"^^xsd:time .
+
+:ts_tue_13_15 a :Timeslot ;
+    rdfs:label "Tuesday 13-15" ;
+    :dayOfWeek "Tuesday" ;
+    :startTime "13:00:00"^^xsd:time ;
+    :endTime   "15:00:00"^^xsd:time .
+
+:ts_tue_15_17 a :Timeslot ;
+    rdfs:label "Tuesday 15-17" ;
+    :dayOfWeek "Tuesday" ;
+    :startTime "15:00:00"^^xsd:time ;
+    :endTime   "17:00:00"^^xsd:time .
+
+# WEDNESDAY
+:ts_wed_08_10 a :Timeslot ;
+    rdfs:label "Wednesday 08-10" ;
+    :dayOfWeek "Wednesday" ;
+    :startTime "08:00:00"^^xsd:time ;
+    :endTime   "10:00:00"^^xsd:time .
+
+:ts_wed_10_12 a :Timeslot ;
+    rdfs:label "Wednesday 10-12" ;
+    :dayOfWeek "Wednesday" ;
+    :startTime "10:00:00"^^xsd:time ;
+    :endTime   "12:00:00"^^xsd:time .
+
+:ts_wed_13_15 a :Timeslot ;
+    rdfs:label "Wednesday 13-15" ;
+    :dayOfWeek "Wednesday" ;
+    :startTime "13:00:00"^^xsd:time ;
+    :endTime   "15:00:00"^^xsd:time .
+
+:ts_wed_15_17 a :Timeslot ;
+    rdfs:label "Wednesday 15-17" ;
+    :dayOfWeek "Wednesday" ;
+    :startTime "15:00:00"^^xsd:time ;
+    :endTime   "17:00:00"^^xsd:time .
+
+# THURSDAY
+:ts_thu_08_10 a :Timeslot ;
+    rdfs:label "Thursday 08-10" ;
+    :dayOfWeek "Thursday" ;
+    :startTime "08:00:00"^^xsd:time ;
+    :endTime   "10:00:00"^^xsd:time .
+
+:ts_thu_10_12 a :Timeslot ;
+    rdfs:label "Thursday 10-12" ;
+    :dayOfWeek "Thursday" ;
+    :startTime "10:00:00"^^xsd:time ;
+    :endTime   "12:00:00"^^xsd:time .
+
+:ts_thu_13_15 a :Timeslot ;
+    rdfs:label "Thursday 13-15" ;
+    :dayOfWeek "Thursday" ;
+    :startTime "13:00:00"^^xsd:time ;
+    :endTime   "15:00:00"^^xsd:time .
+
+:ts_thu_15_17 a :Timeslot ;
+    rdfs:label "Thursday 15-17" ;
+    :dayOfWeek "Thursday" ;
+    :startTime "15:00:00"^^xsd:time ;
+    :endTime   "17:00:00"^^xsd:time .
+
+# FRIDAY
+:ts_fri_08_10 a :Timeslot ;
+    rdfs:label "Friday 08-10" ;
+    :dayOfWeek "Friday" ;
+    :startTime "08:00:00"^^xsd:time ;
+    :endTime   "10:00:00"^^xsd:time .
+
+:ts_fri_10_12 a :Timeslot ;
+    rdfs:label "Friday 10-12" ;
+    :dayOfWeek "Friday" ;
+    :startTime "10:00:00"^^xsd:time ;
+    :endTime   "12:00:00"^^xsd:time .
+
+:ts_fri_13_15 a :Timeslot ;
+    rdfs:label "Friday 13-15" ;
+    :dayOfWeek "Friday" ;
+    :startTime "13:00:00"^^xsd:time ;
+    :endTime   "15:00:00"^^xsd:time .
+
+:ts_fri_15_17 a :Timeslot ;
+    rdfs:label "Friday 15-17" ;
+    :dayOfWeek "Friday" ;
+    :startTime "15:00:00"^^xsd:time ;
+    :endTime   "17:00:00"^^xsd:time .
+
+# ----------CLASSES----------
+:class_1 a :CourseInstance ;
+    rdfs:label "Class 1" .
+
+:class_2 a :CourseInstance ;
+    rdfs:label "Class 2" .
+
+:class_3 a :CourseInstance ;
+    rdfs:label "Class 3" .
+
+:class_4 a :CourseInstance ;
+    rdfs:label "Class 4" .
+
+:class_5 a :CourseInstance ;
+    rdfs:label "Class 5" .
+
+:class_6 a :CourseInstance ;
+    rdfs:label "Class 6" .
