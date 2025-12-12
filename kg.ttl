@@ -60,7 +60,7 @@
 :frans_jeppsson_wall a :Teacher ;
     rdfs:label "Frans Jeppsson Wall" .
 
-:örs_siklósi a :Teacher ;
+:olle_olsson a :Teacher ;
     rdfs:label "Olle Olsson" .
 
 :benjamin_tennyson a :Teacher ;
@@ -78,7 +78,7 @@
 :joakim_nivre a :Teacher ;
     rdfs:label "Joakim Nivre" .
 
-:viveka_adelswärd a :Teacher ;
+:viveka_adelsward a :Teacher ;
     rdfs:label "Viveka Adelsward" .
     
 # ----------CLASSROOMS----------
@@ -189,76 +189,126 @@
 
 # ----------Course Instances----------
 :i1 a :CourseInstance ;
-    rdfs:label "Course Instance 1" .
+    rdfs:label "Course Instance 1" ;
+    :taughtBy :marcus_gunnarsen ;
+    :taughtTo :studentGroup_1 .
 
 :i2 a :CourseInstance ;
-    rdfs:label "Course Instance 2" .
+    rdfs:label "Course Instance 2" ;
+    :taughtBy :marcus_gunnarsen ;
+    :taughtTo :studentGroup_1 .
 
 :i3 a :CourseInstance ;
-    rdfs:label "Course Instance 3" .
+    rdfs:label "Course Instance 3" ;
+    :taughtBy :marcus_gunnarsen ;
+    :taughtTo :studentGroup_1 .
 
 :i4 a :CourseInstance ;
-    rdfs:label "Course Instance 4" .
+    rdfs:label "Course Instance 4" ;
+    :taughtBy :frans_jeppsson_wall ;
+    :taughtTo :studentGroup_2 .
 
 :i5 a :CourseInstance ;
-    rdfs:label "Course Instance 5" .
+    rdfs:label "Course Instance 5" ;
+    :taughtBy :frans_jeppsson_wall ;
+    :taughtTo :studentGroup_2 .
 
 :i6 a :CourseInstance ;
-    rdfs:label "Course Instance 6" .
+    rdfs:label "Course Instance 6" ;
+    :taughtBy :frans_jeppsson_wall ;
+    :taughtTo :studentGroup_2 .
 
 :i7 a :CourseInstance ;
-    rdfs:label "Course Instance 7" .
+    rdfs:label "Course Instance 7" ;
+    :taughtBy :frans_jeppsson_wall ;
+    :taughtTo :studentGroup_2 .
 
 :i8 a :CourseInstance ;
-    rdfs:label "Course Instance 8" .
+    rdfs:label "Course Instance 8" ;
+    :taughtBy :olle_olsson ;
+    :taughtTo :studentGroup_3 .
 
 :i9 a :CourseInstance ;
-    rdfs:label "Course Instance 9" .
+    rdfs:label "Course Instance 9" ;
+    :taughtBy :olle_olsson ;
+    :taughtTo :studentGroup_3 .
 
 :i10 a :CourseInstance ;
-    rdfs:label "Course Instance 10" .
+    rdfs:label "Course Instance 10" ;
+    :taughtBy :olle_olsson ;
+    :taughtTo :studentGroup_3 .
 
 :i11 a :CourseInstance ;
-    rdfs:label "Course Instance 11" .
+    rdfs:label "Course Instance 11" ;
+    :taughtBy :benjamin_tennyson ;
+    :taughtTo :studentGroup_4 .
 
 :i12 a :CourseInstance ;
-    rdfs:label "Course Instance 12" .
+    rdfs:label "Course Instance 12" ;
+    :taughtBy :benjamin_tennyson ;
+    :taughtTo :studentGroup_4 .
 
 :i13 a :CourseInstance ;
-    rdfs:label "Course Instance 13" .
+    rdfs:label "Course Instance 13" ;
+    :taughtBy :daniel_fenton ;
+    :taughtTo :studentGroup_5 .
 
 :i14 a :CourseInstance ;
-    rdfs:label "Course Instance 14" .
+    rdfs:label "Course Instance 14" ;
+    :taughtBy :daniel_fenton ;
+    :taughtTo :studentGroup_5 .
 
 :i15 a :CourseInstance ;
-    rdfs:label "Course Instance 15" .
+    rdfs:label "Course Instance 15" ;
+    :taughtBy :finn_campbell_mertens ;
+    :taughtTo :studentGroup_3 .
 
 :i16 a :CourseInstance ;
-    rdfs:label "Course Instance 16" .
+    rdfs:label "Course Instance 16" ;
+    :taughtBy :finn_campbell_mertens ;
+    :taughtTo :studentGroup_3 .
 
 :i17 a :CourseInstance ;
-    rdfs:label "Course Instance 17" .
+    rdfs:label "Course Instance 17" ;
+    :taughtBy :henrik_rosenkvist ;
+    :taughtTo :studentGroup_4 .
 
 :i18 a :CourseInstance ;
-    rdfs:label "Course Instance 18" .
+    rdfs:label "Course Instance 18" ;
+    :taughtBy :henrik_rosenkvist ;
+    :taughtTo :studentGroup_4 .
 
 :i19 a :CourseInstance ;
-    rdfs:label "Course Instance 19" .
+    rdfs:label "Course Instance 19" ;
+    :taughtBy :joakim_nivre ;
+    :taughtTo :studentGroup_5 .
 
 :i20 a :CourseInstance ;
-    rdfs:label "Course Instance 20" .
+    rdfs:label "Course Instance 20" ;
+    :taughtBy :joakim_nivre ;
+    :taughtTo :studentGroup_5 .
 
 :i21 a :CourseInstance ;
-    rdfs:label "Course Instance 21" .
+    rdfs:label "Course Instance 21" ;
+    :taughtBy :viveka_adelsward ;
+    :taughtTo :studentGroup_6 .
 
 :i22 a :CourseInstance ;
-    rdfs:label "Course Instance 22" .
+    rdfs:label "Course Instance 22" ;
+    :taughtBy :viveka_adelsward ;
+    :taughtTo :studentGroup_6 .
 
 :i23 a :CourseInstance ;
-    rdfs:label "Course Instance 23" .
+    rdfs:label "Course Instance 23" ;
+    :taughtBy :viveka_adelsward ;
+    :taughtTo :studentGroup_6 .
 
 :i24 a :CourseInstance ;
-    rdfs:label "Course Instance 24" .
+    rdfs:label "Course Instance 24" ;
+    :taughtBy :viveka_adelsward ;
+    :taughtTo :studentGroup_6 .
 
 :i25 a :CourseInstance ;
-    rdfs:label "Course Instance 25" .
+    rdfs:label "Course Instance 25" ;
+    :taughtBy :olle_olsson ;
+    :taughtTo :studentGroup_1 .
