@@ -13,21 +13,15 @@
 #################################################################
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#hasClass
-:hasClass rdf:type owl:ObjectProperty ;
-          rdfs:domain :Program ;
-          rdfs:range :Class .
+:hasCourse rdf:type owl:ObjectProperty ;
+          rdfs:domain :StudentGroup ;
+          rdfs:range :Course .
 
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#hasCourseInstance
 :hasCourseInstance rdf:type owl:ObjectProperty ;
                    rdfs:domain :Course ;
                    rdfs:range :CourseInstance .
-
-
-###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#isPartOfProgram
-:isPartOfProgram rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Course ;
-                 rdfs:range :Program .
 
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#scheduledAt
@@ -51,7 +45,7 @@
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#taughtTo
 :taughtTo rdf:type owl:ObjectProperty ;
           rdfs:domain :CourseInstance ;
-          rdfs:range :Class .
+          rdfs:range :StudentGroup .
 
 
 #################################################################
@@ -65,14 +59,14 @@
 
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#occurencesPerWeek
-:occurencesPerWeek rdf:type owl:DatatypeProperty ;
+:occurrencesPerWeek rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Course ;
                    rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#size
 :size rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Class ;
+      rdfs:domain :StudentGroup ;
       rdfs:range xsd:integer .
 
 
@@ -80,8 +74,8 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#Class
-:Class rdf:type owl:Class .
+###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#StudentGroup
+:StudentGroup rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#Classroom
@@ -94,7 +88,6 @@
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#CourseInstance
 :CourseInstance rdf:type owl:Class ;
-                rdfs:subClassOf :Course .
 
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#Lab
@@ -105,10 +98,6 @@
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#Lecture
 :Lecture rdf:type owl:Class ;
          rdfs:subClassOf :CourseInstance .
-
-
-###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#Program
-:Program rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#Seminar
