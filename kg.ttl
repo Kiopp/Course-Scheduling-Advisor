@@ -170,22 +170,28 @@
 
 # ----------CLASSES----------
 :studentGroup_1 a :StudentGroup ;
-    rdfs:label "Student Group 1" .
+    rdfs:label "Student Group 1" ;
+    :size 25 .
 
 :studentGroup_2 a :StudentGroup ;
-    rdfs:label "Student Group 2" .
+    rdfs:label "Student Group 2" ;
+    :size 30 .
 
 :studentGroup_3 a :StudentGroup ;
-    rdfs:label "Student Group 3" .
+    rdfs:label "Student Group 3" ;
+    :size 33 .
 
 :studentGroup_4 a :StudentGroup ;
-    rdfs:label "Student Group 4" .
+    rdfs:label "Student Group 4" ;
+    :size 28 .
 
 :studentGroup_5 a :StudentGroup ;
-    rdfs:label "Student Group 5" .
+    rdfs:label "Student Group 5" ;
+    :size 35 .
 
 :studentGroup_6 a :StudentGroup ;
-    rdfs:label "Student Group 6" .
+    rdfs:label "Student Group 6" ;
+    :size 22 .
 
 # ----------Course Instances----------
 :i1 a :CourseInstance ;
