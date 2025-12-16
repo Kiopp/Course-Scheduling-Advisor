@@ -39,6 +39,13 @@ conflict("Mismatched_Occurrences", C, Occ, Count) :-
 :~ conflict("Mismatched_Occurrences", C, _, _). [100@1, C]
 :~ conflict(Type, _, _, _, _). [100@1, Type]
 
+timetable(Course, Class, Teacher, Room, Time) :-
+    schedule(I, Room, Time),
+    has_course(I, Course),
+    taughtTo(I, Class),
+    taughtBy(I, Teacher).
+
+#show timetable/5.
 #show schedule/3.
 #show conflict/4.
 #show conflict/5.
