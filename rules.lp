@@ -13,17 +13,17 @@ conflict("Teacher_Double_Booked", Teacher, T, I1, I2) :-
     taughtBy(I1, Teacher),
     taughtBy(I2, Teacher).
 
-conflict("Class_Double_Booked", Class, T, I1, I2) :-
+conflict("Stdent_Group_Double_Booked", Group, T, I1, I2) :-
     schedule(I1, _, T),
     schedule(I2, _, T),
     I1 < I2,
-    taughtTo(I1, Class),
-    taughtTo(I2, Class).
+    taughtTo(I1, Group),
+    taughtTo(I2, Group).
 
-conflict("Capacity_Exceeded", Room, T, I) :-
+conflict("Capacity_Exceeded", Room, T, I, Group) :-
     schedule(I, Room, T),
-    taughtTo(I, Class),
-    class_size(Class, Size),
+    taughtTo(I, Group),
+    group_size(Group, Size),
     capacity(Room, Cap),
     Size > Cap.
 
@@ -47,5 +47,4 @@ timetable(Course, Class, Teacher, Room, Time) :-
 
 #show timetable/5.
 #show schedule/3.
-#show conflict/4.
 #show conflict/5.

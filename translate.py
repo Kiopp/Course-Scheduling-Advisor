@@ -58,7 +58,7 @@ for sg in g.subjects(RDF.type, NS.StudentGroup):
     if size is None:
         size = 1  # default if no size provided
 
-    asp_lines.append(f"class_size({local_name(sg)}, {size}).")
+    asp_lines.append(f"group_size({local_name(sg)}, {size}).")
 
 asp_lines.append("")
 

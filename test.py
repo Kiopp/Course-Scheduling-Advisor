@@ -20,7 +20,7 @@ PREFIXES = """@prefix : <http://www.semanticweb.org/vencilo/ontologies/2025/11/S
 instance_counter = 1
 ttl_lines = []
 
-# ✅ WRITE PREFIXES FIRST
+# WRITE PREFIXES FIRST
 ttl_lines.append(PREFIXES)
 ttl_lines.append("# ----------Course Instances----------\n")
 

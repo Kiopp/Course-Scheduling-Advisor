@@ -41,12 +41,12 @@ course(semantics, 2).
 course(languages_of_the_world, 4).
 course(syntactic_theory, 1).
 
-class_size(studentGroup_1, 25).
-class_size(studentGroup_2, 30).
-class_size(studentGroup_3, 33).
-class_size(studentGroup_4, 28).
-class_size(studentGroup_5, 35).
-class_size(studentGroup_6, 22).
+group_size(studentGroup_1, 25).
+group_size(studentGroup_2, 30).
+group_size(studentGroup_3, 33).
+group_size(studentGroup_4, 28).
+group_size(studentGroup_5, 35).
+group_size(studentGroup_6, 22).
 
 instance(i1).
 instance(i2).
