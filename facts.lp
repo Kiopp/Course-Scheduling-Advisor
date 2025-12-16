@@ -140,16 +140,16 @@ taughtTo(i11, studentGroup_4).
 taughtTo(i12, studentGroup_4).
 taughtTo(i13, studentGroup_5).
 taughtTo(i14, studentGroup_5).
-taughtTo(i15, studentGroup_3).
-taughtTo(i16, studentGroup_3).
-taughtTo(i17, studentGroup_4).
-taughtTo(i18, studentGroup_4).
-taughtTo(i19, studentGroup_5).
-taughtTo(i20, studentGroup_5).
-taughtTo(i21, studentGroup_6).
-taughtTo(i22, studentGroup_6).
-taughtTo(i23, studentGroup_6).
-taughtTo(i24, studentGroup_6).
-taughtTo(i25, studentGroup_1).
+taughtTo(i15, studentGroup_6).
+taughtTo(i16, studentGroup_6).
+taughtTo(i17, studentGroup_1).
+taughtTo(i18, studentGroup_1).
+taughtTo(i19, studentGroup_2).
+taughtTo(i20, studentGroup_2).
+taughtTo(i21, studentGroup_3).
+taughtTo(i22, studentGroup_3).
+taughtTo(i23, studentGroup_3).
+taughtTo(i24, studentGroup_3).
+taughtTo(i25, studentGroup_4).
 
 

@@ -1,8 +1,8 @@
 from rdflib import Graph, Namespace, RDF, RDFS, XSD
 
-# Load KG
 g = Graph()
 g.parse("kg.ttl", format="turtle")
+g.parse("generated_instances.ttl", format="turtle")
 
 NS = Namespace("http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler/")
 
