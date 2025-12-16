@@ -20,31 +20,35 @@ PREFIXES = """@prefix : <http://www.semanticweb.org/vencilo/ontologies/2025/11/S
 instance_counter = 1
 ttl_lines = []
 
-# WRITE PREFIXES FIRST
 ttl_lines.append(PREFIXES)
 ttl_lines.append("# ----------Course Instances----------\n")
 
 for course in g.subjects(RDF.type, NS.Course):
-    occ = next(g.objects(course, NS.occurrencesPerWeek), None)
-    if occ is None:
+    occ_literal = next(g.objects(course, NS.occurrencesPerWeek), None)
+    if occ_literal is None:
         continue
 
-    occ = int(occ)
+    occ = int(occ_literal)
 
-    teacher = next(g.objects(course, NS.taughtBy), None)
-    group = next(g.objects(course, NS.taughtTo), None)
+    teachers = list(g.objects(course, NS.taughtBy))
+    groups = list(g.objects(course, NS.taughtTo))
 
-    if teacher is None or group is None:
-        raise ValueError(f"Course {local_name(course)} missing taughtBy or taughtTo")
+    if not teachers:
+        raise ValueError(f"Course {local_name(course)} has no teachers")
 
-    for _ in range(occ):
+    if not groups:
+        raise ValueError(f"Course {local_name(course)} has no student groups")
+
+    for i in range(occ):
         inst_id = f"i{instance_counter}"
+
+        assigned_teacher = teachers[i % len(teachers)]
 
         ttl_lines.append(
             f""":{inst_id} a :CourseInstance ;
     rdfs:label "Course Instance {instance_counter}" ;
-    :taughtBy :{local_name(teacher)} ;
-    :taughtTo :{local_name(group)} .
+    :taughtBy :{local_name(assigned_teacher)} ;
+    :taughtTo {", ".join(f":{local_name(g)}" for g in groups)} .
 
 """
         )
