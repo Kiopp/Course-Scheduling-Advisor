@@ -28,9 +28,9 @@ course(english, 3).
 %%% CLASSES (student groups) AND SIZES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-class_size(a1, 15).
-class_size(a2, 25).
-class_size(a3, 5).
+group_size(a1, 15).
+group_size(a2, 25).
+group_size(a3, 5).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% INSTANCES (specific teaching sessions)
@@ -41,7 +41,6 @@ instance(i2).
 instance(i3).
 instance(i4).
 instance(i5).
-instance(i6).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% INSTANCE → COURSE
@@ -52,7 +51,6 @@ has_course(i2, math).
 has_course(i3, physics).
 has_course(i4, english).
 has_course(i5, english).
-has_course(i6, english).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% INSTANCE → TEACHER
@@ -63,7 +61,6 @@ taughtBy(i2, teacher_john).
 taughtBy(i3, teacher_mary).
 taughtBy(i4, teacher_sam).
 taughtBy(i5, teacher_sam).
-taughtBy(i6, teacher_sam).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% INSTANCE → CLASS
@@ -74,7 +71,6 @@ taughtTo(i2, a1).
 taughtTo(i3, a2).
 taughtTo(i4, a3).
 taughtTo(i5, a3).
-taughtTo(i6, a3).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% OPTIONAL: MANUALLY FIX SCHEDULE TO

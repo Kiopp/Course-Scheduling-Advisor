@@ -28,9 +28,9 @@ course(english, 3).
 %%% CLASSES (student groups) AND SIZES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-class_size(a1, 10).
-class_size(a2, 20).
-class_size(a3, 5).
+group_size(a1, 10).
+group_size(a2, 20).
+group_size(a3, 5).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% INSTANCES (teaching sessions)
