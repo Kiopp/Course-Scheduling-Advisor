@@ -46,5 +46,6 @@ timetable(Course, Group, Teacher, Room, Time) :-
     taughtBy(I, Teacher).
 
 #show timetable/5.
-#show schedule/3.
+%#show schedule/3.
+#show conflict/4.
 #show conflict/5.
