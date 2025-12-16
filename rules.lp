@@ -44,5 +44,12 @@ conflict("Mismatched_Occurrences", Course, Occurrences) :-
 
 :~ conflict(Type, Entity, Time). [100@1, Type]
 
-#show schedule/3.
+timetable(Course, Class, Teacher, Room, Time) :-
+    schedule(I, Room, Time),
+    has_course(I, Course),
+    taughtTo(I, Class),
+    taughtBy(I, Teacher).
+
+#show timetable/5.
+%#show schedule/3.
 #show conflict/3.
