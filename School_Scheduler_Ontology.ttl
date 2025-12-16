@@ -32,7 +32,7 @@
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#taughtBy
 :taughtBy rdf:type owl:ObjectProperty ;
-          rdfs:domain :CourseInstance ;
+          rdfs:domain :Course ;
           rdfs:range :Teacher .
 
 
@@ -44,7 +44,7 @@
 
 ###  http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler#taughtTo
 :taughtTo rdf:type owl:ObjectProperty ;
-          rdfs:domain :CourseInstance ;
+          rdfs:domain :Course ;
           rdfs:range :StudentGroup .
 
 

@@ -6,52 +6,72 @@
 :knowledge_representation_and_reasoning a :Course ;
     rdfs:label "Knowledge Representation and Reasoning" ;
     :hasCourseInstance :i1, :i2, :i3 ;
-    :occurrencesPerWeek 3 .
+    :occurrencesPerWeek 3 ;
+    :taughtBy :marcus_gunnarsen ;
+    :taughtTo :studentGroup_1 .
 
 :data_structures a :Course ;
     rdfs:label "Data Structures" ;
     :hasCourseInstance :i4, :i5, :i6, :i7 ;
-    :occurrencesPerWeek 4 .
+    :occurrencesPerWeek 4 ;
+    :taughtBy :frans_jeppsson_wall ;
+    :taughtTo :studentGroup_2 .
 
 :single_variable_calculus a :Course ;
     rdfs:label "Single Variable Calculus" ;
     :hasCourseInstance :i8, :i9, :i10 ;
-    :occurrencesPerWeek 3 .
+    :occurrencesPerWeek 3 ;
+    :taughtBy :olle_olsson ;
+    :taughtTo :studentGroup_3 .
 
 :statistics a :Course ;
     rdfs:label "Statistics" ;
     :hasCourseInstance :i11, :i12 ;
-    :occurrencesPerWeek 2 .
+    :occurrencesPerWeek 2 ;
+    :taughtBy :benjamin_tennyson ;
+    :taughtTo :studentGroup_4 .
 
 :international_marketing a :Course ;
     rdfs:label "International Marketing" ;
     :hasCourseInstance :i13, :i14 ;
-    :occurrencesPerWeek 2 .
+    :occurrencesPerWeek 2 ;
+    :taughtBy :daniel_fenton ;
+    :taughtTo :studentGroup_5 .
 
 :microeconomic_principles a :Course ;
     rdfs:label "Microeconomic Principles" ;
     :hasCourseInstance :i15, :i16 ;
-    :occurrencesPerWeek 2 .
+    :occurrencesPerWeek 2 ;
+    :taughtBy :finn_campbell_mertens ;
+    :taughtTo :studentGroup_6 .
 
 :phonetics a :Course ;
     rdfs:label "Phonetics" ;
     :hasCourseInstance :i17, :i18 ;
-    :occurrencesPerWeek 2 .
+    :occurrencesPerWeek 2 ;
+    :taughtBy :henrik_rosenkvist ;
+    :taughtTo :studentGroup_1 .
 
 :semantics a :Course ;
     rdfs:label "Semantics" ;
     :hasCourseInstance :i19, :i20 ;
-    :occurrencesPerWeek 2 .
+    :occurrencesPerWeek 2 ;
+    :taughtBy :joakim_nivre ;
+    :taughtTo :studentGroup_2 .
 
 :languages_of_the_world a :Course ;
     rdfs:label "Languages of the World" ;
     :hasCourseInstance :i21, :i22, :i23, :i24 ;
-    :occurrencesPerWeek 4 .
+    :occurrencesPerWeek 4 ;
+    :taughtBy :viveka_adelsward ;
+    :taughtTo :studentGroup_3 .
 
 :syntactic_theory a :Course ;
     rdfs:label "Syntactic Theory" ;
     :hasCourseInstance :i25 ;
-    :occurrencesPerWeek 1 .
+    :occurrencesPerWeek 1 ;
+    :taughtBy :olle_olsson ;
+    :taughtTo :studentGroup_4 .
 
 # ----------TEACHERS----------
 :marcus_gunnarsen a :Teacher ;
@@ -192,129 +212,3 @@
 :studentGroup_6 a :StudentGroup ;
     rdfs:label "Student Group 6" ;
     :size 22 .
-
-# ----------Course Instances----------
-:i1 a :CourseInstance ;
-    rdfs:label "Course Instance 1" ;
-    :taughtBy :marcus_gunnarsen ;
-    :taughtTo :studentGroup_1 .
-
-:i2 a :CourseInstance ;
-    rdfs:label "Course Instance 2" ;
-    :taughtBy :marcus_gunnarsen ;
-    :taughtTo :studentGroup_1 .
-
-:i3 a :CourseInstance ;
-    rdfs:label "Course Instance 3" ;
-    :taughtBy :marcus_gunnarsen ;
-    :taughtTo :studentGroup_1 .
-
-:i4 a :CourseInstance ;
-    rdfs:label "Course Instance 4" ;
-    :taughtBy :frans_jeppsson_wall ;
-    :taughtTo :studentGroup_2 .
-
-:i5 a :CourseInstance ;
-    rdfs:label "Course Instance 5" ;
-    :taughtBy :frans_jeppsson_wall ;
-    :taughtTo :studentGroup_2 .
-
-:i6 a :CourseInstance ;
-    rdfs:label "Course Instance 6" ;
-    :taughtBy :frans_jeppsson_wall ;
-    :taughtTo :studentGroup_2 .
-
-:i7 a :CourseInstance ;
-    rdfs:label "Course Instance 7" ;
-    :taughtBy :frans_jeppsson_wall ;
-    :taughtTo :studentGroup_2 .
-
-:i8 a :CourseInstance ;
-    rdfs:label "Course Instance 8" ;
-    :taughtBy :olle_olsson ;
-    :taughtTo :studentGroup_3 .
-
-:i9 a :CourseInstance ;
-    rdfs:label "Course Instance 9" ;
-    :taughtBy :olle_olsson ;
-    :taughtTo :studentGroup_3 .
-
-:i10 a :CourseInstance ;
-    rdfs:label "Course Instance 10" ;
-    :taughtBy :olle_olsson ;
-    :taughtTo :studentGroup_3 .
-
-:i11 a :CourseInstance ;
-    rdfs:label "Course Instance 11" ;
-    :taughtBy :benjamin_tennyson ;
-    :taughtTo :studentGroup_4 .
-
-:i12 a :CourseInstance ;
-    rdfs:label "Course Instance 12" ;
-    :taughtBy :benjamin_tennyson ;
-    :taughtTo :studentGroup_4 .
-
-:i13 a :CourseInstance ;
-    rdfs:label "Course Instance 13" ;
-    :taughtBy :daniel_fenton ;
-    :taughtTo :studentGroup_5 .
-
-:i14 a :CourseInstance ;
-    rdfs:label "Course Instance 14" ;
-    :taughtBy :daniel_fenton ;
-    :taughtTo :studentGroup_5 .
-
-:i15 a :CourseInstance ;
-    rdfs:label "Course Instance 15" ;
-    :taughtBy :finn_campbell_mertens ;
-    :taughtTo :studentGroup_3 .
-
-:i16 a :CourseInstance ;
-    rdfs:label "Course Instance 16" ;
-    :taughtBy :finn_campbell_mertens ;
-    :taughtTo :studentGroup_3 .
-
-:i17 a :CourseInstance ;
-    rdfs:label "Course Instance 17" ;
-    :taughtBy :henrik_rosenkvist ;
-    :taughtTo :studentGroup_4 .
-
-:i18 a :CourseInstance ;
-    rdfs:label "Course Instance 18" ;
-    :taughtBy :henrik_rosenkvist ;
-    :taughtTo :studentGroup_4 .
-
-:i19 a :CourseInstance ;
-    rdfs:label "Course Instance 19" ;
-    :taughtBy :joakim_nivre ;
-    :taughtTo :studentGroup_5 .
-
-:i20 a :CourseInstance ;
-    rdfs:label "Course Instance 20" ;
-    :taughtBy :joakim_nivre ;
-    :taughtTo :studentGroup_5 .
-
-:i21 a :CourseInstance ;
-    rdfs:label "Course Instance 21" ;
-    :taughtBy :viveka_adelsward ;
-    :taughtTo :studentGroup_6 .
-
-:i22 a :CourseInstance ;
-    rdfs:label "Course Instance 22" ;
-    :taughtBy :viveka_adelsward ;
-    :taughtTo :studentGroup_6 .
-
-:i23 a :CourseInstance ;
-    rdfs:label "Course Instance 23" ;
-    :taughtBy :viveka_adelsward ;
-    :taughtTo :studentGroup_6 .
-
-:i24 a :CourseInstance ;
-    rdfs:label "Course Instance 24" ;
-    :taughtBy :viveka_adelsward ;
-    :taughtTo :studentGroup_6 .
-
-:i25 a :CourseInstance ;
-    rdfs:label "Course Instance 25" ;
-    :taughtBy :olle_olsson ;
-    :taughtTo :studentGroup_1 .

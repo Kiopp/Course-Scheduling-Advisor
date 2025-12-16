@@ -1,8 +1,8 @@
 from rdflib import Graph, Namespace, RDF, RDFS, XSD
 
-# Load KG
 g = Graph()
 g.parse("kg.ttl", format="turtle")
+g.parse("generated_instances.ttl", format="turtle")
 
 NS = Namespace("http://www.semanticweb.org/vencilo/ontologies/2025/11/School-Scheduler/")
 
@@ -58,7 +58,7 @@ for sg in g.subjects(RDF.type, NS.StudentGroup):
     if size is None:
         size = 1  # default if no size provided
 
-    asp_lines.append(f"class_size({local_name(sg)}, {size}).")
+    asp_lines.append(f"group_size({local_name(sg)}, {size}).")
 
 asp_lines.append("")
 
