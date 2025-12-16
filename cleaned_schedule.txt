@@ -1,0 +1,41 @@
+clingo version 5.8.0
+Reading from rules.lp ...
+Solving...
+Answer: 17 (Time: 0.108s)
+timetable(i1,knowledge_representation_and_reasoning,studentGroup_1,marcus_gunnarsen,room_e,ts_tue_10_12)
+timetable(i1,knowledge_representation_and_reasoning,studentGroup_6,marcus_gunnarsen,room_e,ts_tue_10_12)
+timetable(i2,knowledge_representation_and_reasoning,studentGroup_1,frans_jeppsson_wall,room_b,ts_mon_15_17)
+timetable(i2,knowledge_representation_and_reasoning,studentGroup_6,frans_jeppsson_wall,room_b,ts_mon_15_17)
+timetable(i3,knowledge_representation_and_reasoning,studentGroup_1,marcus_gunnarsen,room_e,ts_fri_15_17)
+timetable(i3,knowledge_representation_and_reasoning,studentGroup_6,marcus_gunnarsen,room_e,ts_fri_15_17)
+timetable(i4,data_structures,studentGroup_2,frans_jeppsson_wall,room_e,ts_wed_15_17)
+timetable(i5,data_structures,studentGroup_2,olle_olsson,room_b,ts_thu_15_17)
+timetable(i6,data_structures,studentGroup_2,frans_jeppsson_wall,room_b,ts_tue_15_17)
+timetable(i7,data_structures,studentGroup_2,olle_olsson,room_d,ts_fri_10_12)
+timetable(i8,single_variable_calculus,studentGroup_3,olle_olsson,room_d,ts_tue_15_17)
+timetable(i9,single_variable_calculus,studentGroup_3,olle_olsson,room_e,ts_thu_13_15)
+timetable(i10,single_variable_calculus,studentGroup_3,olle_olsson,room_e,ts_thu_10_12)
+timetable(i11,statistics,studentGroup_4,benjamin_tennyson,room_a,ts_wed_08_10)
+timetable(i12,statistics,studentGroup_4,benjamin_tennyson,room_a,ts_wed_10_12)
+timetable(i13,international_marketing,studentGroup_5,daniel_fenton,room_e,ts_mon_08_10)
+timetable(i14,international_marketing,studentGroup_5,daniel_fenton,room_d,ts_fri_08_10)
+timetable(i15,microeconomic_principles,studentGroup_6,finn_campbell_mertens,room_e,ts_thu_08_10)
+timetable(i16,microeconomic_principles,studentGroup_6,finn_campbell_mertens,room_e,ts_fri_13_15)
+timetable(i17,phonetics,studentGroup_1,henrik_rosenkvist,room_d,ts_tue_08_10)
+timetable(i18,phonetics,studentGroup_1,henrik_rosenkvist,room_e,ts_thu_15_17)
+timetable(i19,semantics,studentGroup_2,joakim_nivre,room_a,ts_mon_10_12)
+timetable(i20,semantics,studentGroup_2,joakim_nivre,room_e,ts_tue_08_10)
+timetable(i21,languages_of_the_world,studentGroup_3,viveka_adelsward,room_b,ts_fri_15_17)
+timetable(i22,languages_of_the_world,studentGroup_3,viveka_adelsward,room_b,ts_fri_13_15)
+timetable(i23,languages_of_the_world,studentGroup_3,viveka_adelsward,room_e,ts_wed_10_12)
+timetable(i24,languages_of_the_world,studentGroup_3,viveka_adelsward,room_d,ts_wed_13_15)
+timetable(i25,syntactic_theory,studentGroup_4,olle_olsson,room_d,ts_tue_10_12)
+Optimization: 0 0 0
+OPTIMUM FOUND
+
+Models       : 17
+  Optimum    : yes
+Optimization : 0 0 0
+Calls        : 1
+Time         : 0.108s (Solving: 0.03s 1st Model: 0.02s Unsat: 0.00s)
+CPU Time     : 0.108s

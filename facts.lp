@@ -101,12 +101,12 @@ has_course(i24, languages_of_the_world).
 has_course(i25, syntactic_theory).
 
 taughtBy(i1, marcus_gunnarsen).
-taughtBy(i2, marcus_gunnarsen).
+taughtBy(i2, frans_jeppsson_wall).
 taughtBy(i3, marcus_gunnarsen).
 taughtBy(i4, frans_jeppsson_wall).
-taughtBy(i5, frans_jeppsson_wall).
+taughtBy(i5, olle_olsson).
 taughtBy(i6, frans_jeppsson_wall).
-taughtBy(i7, frans_jeppsson_wall).
+taughtBy(i7, olle_olsson).
 taughtBy(i8, olle_olsson).
 taughtBy(i9, olle_olsson).
 taughtBy(i10, olle_olsson).
@@ -127,8 +127,11 @@ taughtBy(i24, viveka_adelsward).
 taughtBy(i25, olle_olsson).
 
 taughtTo(i1, studentGroup_1).
+taughtTo(i1, studentGroup_6).
 taughtTo(i2, studentGroup_1).
+taughtTo(i2, studentGroup_6).
 taughtTo(i3, studentGroup_1).
+taughtTo(i3, studentGroup_6).
 taughtTo(i4, studentGroup_2).
 taughtTo(i5, studentGroup_2).
 taughtTo(i6, studentGroup_2).

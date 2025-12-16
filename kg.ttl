@@ -7,14 +7,14 @@
     rdfs:label "Knowledge Representation and Reasoning" ;
     :hasCourseInstance :i1, :i2, :i3 ;
     :occurrencesPerWeek 3 ;
-    :taughtBy :marcus_gunnarsen ;
-    :taughtTo :studentGroup_1 .
+    :taughtBy :marcus_gunnarsen, :frans_jeppsson_wall ;
+    :taughtTo :studentGroup_1, :studentGroup_6 .
 
 :data_structures a :Course ;
     rdfs:label "Data Structures" ;
     :hasCourseInstance :i4, :i5, :i6, :i7 ;
     :occurrencesPerWeek 4 ;
-    :taughtBy :frans_jeppsson_wall ;
+    :taughtBy :frans_jeppsson_wall, :olle_olsson ;
     :taughtTo :studentGroup_2 .
 
 :single_variable_calculus a :Course ;

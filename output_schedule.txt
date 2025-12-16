@@ -1,0 +1,14 @@
+clingo version 5.8.0
+Reading from rules.lp ...
+Solving...
+Answer: 1 (Time: 0.002s)
+conflict("Classroom_Double_Booked",r101,t1,i1) conflict("Classroom_Double_Booked",r101,t1,i2) conflict("Teacher_Double_Booked",teacher_john,t1,i1) conflict("Teacher_Double_Booked",teacher_john,t1,i2) conflict("Student_Group_Double_Booked",a1,t1,i1) conflict("Student_Group_Double_Booked",a1,t1,i2) conflict("Mismatched_Occurrences",english,3,2) conflict("Capacity_Exceeded",r102,t2,i3,25) timetable(i1,math,a1,teacher_john,r101,t1) timetable(i2,math,a1,teacher_john,r101,t1) timetable(i3,physics,a2,teacher_mary,r102,t2) timetable(i4,english,a3,teacher_sam,r101,t2) timetable(i5,english,a3,teacher_sam,r101,t3)
+Optimization: 600 100 100
+OPTIMUM FOUND
+
+Models       : 1
+  Optimum    : yes
+Optimization : 600 100 100
+Calls        : 1
+Time         : 0.002s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.002s
