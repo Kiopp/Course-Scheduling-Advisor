@@ -8,17 +8,17 @@
 :i1 a :CourseInstance ;
     rdfs:label "Course Instance 1" ;
     :taughtBy :marcus_gunnarsen ;
-    :taughtTo :studentGroup_1 .
+    :taughtTo :studentGroup_1, :studentGroup_6 .
 
 :i2 a :CourseInstance ;
     rdfs:label "Course Instance 2" ;
-    :taughtBy :marcus_gunnarsen ;
-    :taughtTo :studentGroup_1 .
+    :taughtBy :frans_jeppsson_wall ;
+    :taughtTo :studentGroup_1, :studentGroup_6 .
 
 :i3 a :CourseInstance ;
     rdfs:label "Course Instance 3" ;
     :taughtBy :marcus_gunnarsen ;
-    :taughtTo :studentGroup_1 .
+    :taughtTo :studentGroup_1, :studentGroup_6 .
 
 :i4 a :CourseInstance ;
     rdfs:label "Course Instance 4" ;
@@ -27,7 +27,7 @@
 
 :i5 a :CourseInstance ;
     rdfs:label "Course Instance 5" ;
-    :taughtBy :frans_jeppsson_wall ;
+    :taughtBy :olle_olsson ;
     :taughtTo :studentGroup_2 .
 
 :i6 a :CourseInstance ;
@@ -37,7 +37,7 @@
 
 :i7 a :CourseInstance ;
     rdfs:label "Course Instance 7" ;
-    :taughtBy :frans_jeppsson_wall ;
+    :taughtBy :olle_olsson ;
     :taughtTo :studentGroup_2 .
 
 :i8 a :CourseInstance ;
