@@ -1,4 +1,5 @@
 from translate import translate_facts_from_kg
+from instance_generator import generate_knowledge_graph
 import clingo
 
 def main():
@@ -23,6 +24,7 @@ def select_instance():
 
     if choice == "1":
         print("Selecting from kg...")
+        generate_knowledge_graph()
         translate_facts_from_kg()
         return "facts.lp"
     elif choice == "2":
