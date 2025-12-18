@@ -2,3 +2,4 @@ venv/
 __pycache__/
 schedule.txt
 facts.lp
+generated_instances.ttl
