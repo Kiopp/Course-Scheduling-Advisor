@@ -2,18 +2,28 @@
 %
 % Expected outcome:
 % The scheduler will schedule all instances and point out the resulting conflicts.
+% Riggs the facts but lets the ASP create the schedule
 
-room(r1). capacity(r1, 1000).
-room(r2). capacity(r2, 1000).
+room(r1).
+room(r2).
+
+capacity(r1, 1000).
+capacity(r2, 1000).
+
 timeslot(t1).
 
-course(c1,1). course(c2,1). course(c3,1).
+course(c1,1).
+course(c2,1).
+course(c3,1).
 
 group_size(g1, 10).
 group_size(g2, 10).
 group_size(g3, 10).
 
-instance(i1). instance(i2). instance(i3).
+instance(i1).
+instance(i2).
+instance(i3).
+
 has_course(i1, c1).
 has_course(i2, c2).
 has_course(i3, c3).
