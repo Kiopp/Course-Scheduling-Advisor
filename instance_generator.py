@@ -55,7 +55,6 @@ for course in g.subjects(RDF.type, NS.Course):
 
         instance_counter += 1
 
-# Write output
 with open("generated_instances.ttl", "w") as f:
     f.write("".join(ttl_lines))
 
