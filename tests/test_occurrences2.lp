@@ -15,7 +15,7 @@ timeslot(t3).
 
 % Course c1 is defined to have 4 occurrence
 course(c1, 4).
-% Course c1 is defined to have 1 occurrence
+% Course c2 is defined to have 1 occurrence
 course(c2, 1).
 
 group_size(g1, 10).

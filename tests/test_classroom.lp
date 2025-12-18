@@ -9,7 +9,8 @@ capacity(r1, 1000).
 
 timeslot(t1).
 
-course(c1,1). course(c2,1).
+course(c1,1).
+course(c2,1).
 
 group_size(g1, 10).
 group_size(g2, 10).
