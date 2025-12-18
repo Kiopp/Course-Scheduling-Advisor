@@ -17,6 +17,7 @@ def main():
 # Menu system
 def select_instance():
     print("--- Welcome to the course scheduler! ---")
+    print("Please select a dataset to use")
     print("1. From knowledge graph")
     print("2. Capacity 1")
     print("3. Capacity 2")
