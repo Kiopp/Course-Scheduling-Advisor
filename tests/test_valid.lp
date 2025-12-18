@@ -1,5 +1,5 @@
 % Tests valid schedule.
-% Includes a rigged schedule
+% Facts with possible valid schedule solution
 % Expected output: Valid schedule with no conflicts
 
 room(r1).
@@ -35,7 +35,3 @@ taughtBy(i3, teacher_c).
 taughtTo(i1, g1).
 taughtTo(i2, g2).
 taughtTo(i3, g3).
-
-schedule(i1, r1, t1).
-schedule(i2, r2, t2).
-schedule(i3, r1, t3).
