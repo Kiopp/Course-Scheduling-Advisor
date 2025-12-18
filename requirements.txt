@@ -1,0 +1,5 @@
+cffi==2.0.0
+clingo==5.8.0
+pycparser==2.23
+pyparsing==3.2.5
+rdflib==7.5.0
