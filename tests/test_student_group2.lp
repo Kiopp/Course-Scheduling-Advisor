@@ -45,7 +45,6 @@ taughtBy(i3, teacher_a).
 taughtBy(i4, teacher_b).
 taughtBy(i5, teacher_c).
 
-% Both instances i1 and i2 are taught to the student group g1.
 taughtTo(i1, g1).
 taughtTo(i2, g1).
 taughtTo(i3, g1).

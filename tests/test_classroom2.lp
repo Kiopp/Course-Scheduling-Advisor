@@ -48,10 +48,10 @@ taughtBy(i6, teacher_d).
 
 taughtTo(i1, g1).
 taughtTo(i2, g2).
-taughtTo(i1, g1).
-taughtTo(i2, g2).
-taughtTo(i1, g3).
-taughtTo(i2, g4).
+taughtTo(i3, g1).
+taughtTo(i4, g2).
+taughtTo(i5, g3).
+taughtTo(i6, g4).
 
 schedule(i1, r1, t1). % Classroom double booked
 schedule(i2, r1, t1).
