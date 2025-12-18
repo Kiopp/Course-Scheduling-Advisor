@@ -1,5 +1,5 @@
 # Course-Scheduling-Advisor
-A course scheduling advisor utilizing ontologies and answer-set programming.
+A course scheduling advisor utilizing an ontology, knowledge graph and answer-set programming.
 
 ## How to use
 1. Create a python virtual environment:
