@@ -18,18 +18,70 @@ def main():
 def select_instance():
     print("--- Welcome to the course scheduler! ---")
     print("1. From knowledge graph")
-    print("2. Test case 1")
+    print("2. Capacity 1")
+    print("3. Capacity 2")
+    print("4. Classroom 1")
+    print("5. Classroom 2")
+    print("6. Multi-conflict 1")
+    print("7. Multi-conflict 2")
+    print("8. Occurrences 1")
+    print("9. Occurrences 2")
+    print("10. Student group 1")
+    print("11. Student group 2")
+    print("12. Teacher 1")
+    print("13. Teacher 2")
+    print("14. Valid 1")
+    print("15. Valid 2")
 
-    choice = input("Enter your choice (1-2): ")
+    choice = input("Enter your choice (1-15): ")
 
     if choice == "1":
-        print("Selecting from kg...")
+        print("Selecting instance from knowledge graph...")
         generate_knowledge_graph()
         translate_facts_from_kg()
         return "facts.lp"
     elif choice == "2":
-        print("Selecting test case 1...")
-        return "test.lp"
+        print("Selecting test_capacity...")
+        return "tests/test_capacity.lp"
+    elif choice == "3":
+        print("Selecting test_capacity2...")
+        return "tests/test_capacity2.lp"
+    elif choice == "4":
+        print("Selecting test_classroom...")
+        return "tests/test_classroom.lp"
+    elif choice == "5":
+        print("Selecting test_classroom2...")
+        return "tests/test_classroom2.lp"
+    elif choice == "6":
+        print("Selecting test_multi_conflict...")
+        return "tests/test_multi_conflict.lp"
+    elif choice == "7":
+        print("Selecting test_multi_conflict2...")
+        return "tests/test_multi_conflict2.lp"
+    elif choice == "8":
+        print("Selecting test_occurrences...")
+        return "tests/test_occurrences.lp"
+    elif choice == "9":
+        print("Selecting test_occurrences2...")
+        return "tests/test_occurrences2.lp"
+    elif choice == "10":
+        print("Selecting test_student_group...")
+        return "tests/test_student_group.lp"
+    elif choice == "11":
+        print("Selecting test_student_group2...")
+        return "tests/test_student_group2.lp"
+    elif choice == "12":
+        print("Selecting test_teacher...")
+        return "tests/test_teacher.lp"
+    elif choice == "13":
+        print("Selecting test_teacher2...")
+        return "tests/test_teacher2.lp"
+    elif choice == "14":
+        print("Selecting test_valid...")
+        return "tests/test_valid.lp"
+    elif choice == "15":
+        print("Selecting test_valid2...")
+        return "tests/test_valid2.lp"
     else:
         return ""
 
@@ -48,7 +100,6 @@ def solve(facts_filename, output_filename="schedule.txt"):
         optimal_cost = None
 
         # Ground the logic program
-        print("Grounding...")
         ctl.ground([("base", [])])
 
         # Run solver
