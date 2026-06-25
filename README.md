@@ -3,11 +3,6 @@ A course scheduling advisor utilizing an ontology, knowledge graph and answer-se
 
 ---
 
-# Group Number:
-Group 10
-
----
-
 ## Contributors:
 
 - Jesper\
